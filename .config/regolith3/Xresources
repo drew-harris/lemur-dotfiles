@@ -1,0 +1,5 @@
+regolith.wallpaper.file:/home/drew/Downloads/lydia-stojanov-pXz5sj50a_o-unsplash.jpg
+! wm.mod: Mod1
+i3-wm.gaps.smart: false
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/lascaille

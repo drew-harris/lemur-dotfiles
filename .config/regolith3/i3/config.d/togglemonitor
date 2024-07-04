@@ -1,0 +1,31 @@
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
+
+# # This is awesome
+# bindsym Mod5+s exec --no-startup-id i3-msg '[class="Spotify"] focus'
+# bindsym Mod5+q exec --no-startup-id i3-msg '[class="discord"] focus'
+# bindsym Mod5+a exec --no-startup-id i3-msg '[class="firefox"] focus'
+# bindsym Mod5+i exec --no-startup-id i3-msg '[class="Alacritty"] focus'
+# bindsym Mod5+w exec --no-startup-id i3-msg '[class="Element"] focus'
+# bindsym Mod5+e exec --no-startup-id i3-msg '[class="Nautilus"] focus'
+# bindsym Mod5+v exec --no-startup-id i3-msg '[class="vlc"] focus'
+# bindsym Mod5+t exec --no-startup-id i3-msg '[class="Gnome-terminal"] focus'
+# bindsym Mod5+b exec --no-startup-id i3-msg '[class="blueman-manager"] focus'
+
+bindsym Mod5+s exec --no-startup-id ~/focus_or_launch.sh spotify Spotify
+bindsym Mod5+q exec --no-startup-id ~/focus_or_launch.sh discord discord
+bindsym Mod5+a exec --no-startup-id ~/focus_or_launch.sh firefox firefox
+bindsym Mod5+i exec --no-startup-id ~/focus_or_launch.sh alacritty Alacritty
+bindsym Mod5+w exec --no-startup-id ~/focus_or_launch.sh element Element
+bindsym Mod5+e exec --no-startup-id ~/focus_or_launch.sh nautilus Nautilus
+bindsym Mod5+v exec --no-startup-id ~/focus_or_launch.sh vlc vlc
+bindsym Mod5+t exec --no-startup-id ~/focus_or_launch.sh gnome-terminal Gnome-terminal
+bindsym Mod5+b exec --no-startup-id ~/focus_or_launch.sh blueman-manager Blueman-manager
+bindsym Mod5+h exec --no-startup-id i3-msg '[class="HTTPie"] focus'
+bindsym Mod5+c exec --no-startup-id i3-msg '[class="Code"] focus'
+
+workspace_layout tabbed
+
+smart_gaps off
+
+bindsym $mod+space exec --no-startup-id dunstctl close-all
